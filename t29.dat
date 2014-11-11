@@ -1,0 +1,5 @@
+alloc(265, 500KB);	
+slabSize(512, 1/4);		# size has no unit
+alloc(1758);		# no, size
+alloc(512KB);		# no pid
+dump();

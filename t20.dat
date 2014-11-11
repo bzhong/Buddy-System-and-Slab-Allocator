@@ -1,0 +1,6 @@
+memorySize(4GB);
+slabSize(512KB, 1/8);
+alloc(265, 500KB);
+alloc(1758, 1GB);
+alloc(3, 512KB);
+dump();

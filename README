@@ -1,0 +1,30 @@
+Authorized by Qianqian Zhong
+Oct 19, 2014
+
+This Documentation gives an brief introduction to those who expect to use the program for academic research and assignments of SCU COEN283.
+
+1. Can you briefly illustrate how the program works?
+
+According to p2 requirements from SCU COEN283, the program reads a dat file which contains multiple line commands. Then it will call corresponding functions to process it until the end of the file.
+
+Basic fucntions like buddy split/merge on demand, slab pre-split for speedup, error handling and compaction of buddy memory are all implemented.
+
+2. How to compile and execute the program?
+
+Firstly untar the folder and then use make to compile. There will be a exeutable file named P2 to appear. You can execute it like ./P2 and input some commands. 
+
+3. What are the inputs/outputs?
+
+According to p2 requirements from SCU COEN283, inputs/outputs can be standard inputs from keyboard and standard outputs to screen. Also you can use Unix redirection to use file as input or output.
+
+4. How do you organize the source files?
+
+There are several core modules to form the Buddy Memory System Engine. Class MemNode represents each tree node in the memory hierarchy. All basic operations depend on these nodes. Class SlabMem includes important information about slab allocator. Class BuddySystem consists of buddy memory and slab allocator. Also I wrote some arithmetic related tools for Engine to use. They are included in common.cpp.
+
+Besides, there is a class named Command to manage input commands and parse them. Finally, the main.cpp runs the program.
+
+Of course, multiple file structure may be effective for readability and communication with others for future work.
+
+5. Further contact information?
+
+My email is bradyzhong2018@gmail.com. The SCU gmail account is qzhong@scu.edu.

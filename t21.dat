@@ -1,0 +1,17 @@
+memorySize(1GB);
+slabSize(512KB, 1/16);
+alloc(265, 500KB);
+alloc(1758, 15MB);
+alloc(3, 512KB);
+alloc(31, 256KB);
+alloc(657, 257KB);
+dump();
+realloc(31, 25MB);
+alloc(25, 510KB);
+alloc(511, 500KB);
+alloc(2255, 510MB);
+alloc(13, 356KB);
+alloc(1654, 457KB);
+alloc(2, 256MB);
+alloc(1002, 256MB);
+dump();
